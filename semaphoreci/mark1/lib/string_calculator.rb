@@ -11,3 +11,10 @@
 # Remember to solve things as simply as 
 # possible so that you force yourself to 
 # write tests you did not think about
+
+class StringCalculator
+	def self.add(what)
+		return what.to_i
+	end
+
+end
