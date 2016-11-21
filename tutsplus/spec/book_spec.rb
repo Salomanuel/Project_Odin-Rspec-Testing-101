@@ -7,7 +7,7 @@ describe Book do
 
 	describe "#new" do
 		it "takes three parameters and returns a Book" do
-			@book.should be_an_instance_of Book
+			expect @book be_an_instance_of Book
 		end
 	end
 end
