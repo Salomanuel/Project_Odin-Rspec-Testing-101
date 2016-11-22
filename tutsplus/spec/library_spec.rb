@@ -23,12 +23,12 @@ describe "Library object" do
 		context "with no parameters" do
 			it "has no books" do
 				lib = Library.new
-				expect(lib).to  have(0).books
+				expect(lib.books.size).to eq(0)
 			end
 		end
 		context "with a yaml file parameter" do
 			it "has five books" do
-				expect(@lib).to have(5).books
+				expect(@lib.books.size).to eq(5)
 			end
 		end
 	end
