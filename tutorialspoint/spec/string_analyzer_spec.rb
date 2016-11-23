@@ -3,7 +3,7 @@ require "spec_helper"
 describe StringAnalyzer do
 	context "With valud input" do
 
-		before(:each) do
+		before(:all) do
 			@sa = StringAnalyzer.new
 		end
 
