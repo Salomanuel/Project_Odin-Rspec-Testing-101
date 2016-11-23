@@ -4,13 +4,9 @@ require "yaml"
 
 class Library
 	attr_accessor :books
-	def initialize(input_file=nil)
+	def initialize(input_file=false)
 		@books = []
-		if !input_file.nil?
-			list = YAML.load_file(input_file)
-			# list = YAML.load_file("../#{input_file}")
-			list.each{ |book| @books << book }
-		end
+		YAML.load_file(input_file).each{ |book| @books << book } if input_file
 	end
 
 	def get_books_in_category(category)
@@ -18,9 +14,7 @@ class Library
 	end
 
 	def get_book(title)
-		@books.each do |book|
-			return book if book.title == title
-		end
+		@books.select { |book| book.title == title }.first
 	end
 
 	def save
