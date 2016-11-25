@@ -1,7 +1,8 @@
 class Library
 	attr_reader :books
 	def initialize(database=false)
-		@books = database ? YAML.load_file(database) : []
+		@database = database
+		@books    = @database ? YAML.load_file(@database) : []
 	end
 
 	def get_books_in_category(category)
@@ -14,5 +15,9 @@ class Library
 
 	def get_book(title)
 		@books.each { |book| return book if book.title == title }
+	end
+
+	def save
+		File.open(@database, "w") { |data| data.write YAML::dump @books }
 	end
 end
