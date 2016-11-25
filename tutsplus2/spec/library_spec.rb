@@ -32,4 +32,14 @@ describe "Library object" do
 			end
 		end
 	end
+
+	it "returns all the books in a given category" do
+		expect(@lib.get_books_in_category(:development).length).to eql(2)
+	end
+
+	it "accepts new books" do
+		@lib.add_book( Book.new("Designing for the Web", "Mark Boulton", :design))
+		expect(@lib.get_book("Designing for the Web")).to be_an_instance_of(Book)
+	end
 end
+
