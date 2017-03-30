@@ -1,5 +1,5 @@
 Course List >> Web Development 101 >> The Back End >> 3: Testing Basics 
-#[Testing 101](http://www.theodinproject.com/courses/web-development-101/lessons/testing-basics)
+# [Testing 101](http://www.theodinproject.com/courses/web-development-101/lessons/testing-basics)
 
 Testing is one of those things that people often don't think about when they decide to learn about web development but it's critically important to the production of professional quality applications and it will save you tons of time and headache in the end.
 
@@ -10,12 +10,12 @@ But now imagine that you've got a dozen pages with a login system and content th
 On the back end, you will learn RSpec, a language that is written in Ruby and one which will help you execute a broad and flexible script of tests to make sure your application is still working the way that it should. RSpec's syntax even reads sort of like English, though it still takes some getting used to. RSpec lets you test specific areas of your application like pulling from and saving to the database or that your helper methods work as expected. With the help of a few useful gems, you can also test the broad-scale interactions the user will have when traveling from one web page to another.
 
 Although we're covering this topic in the "Back End" section, testing isn't just for the server-side. On the front end, we'll later learn a language called Jasmine to do a similar sort of thing for Javascript. That should make sense to you -- the reasons to properly test your code apply whether it's run on a server or in the browser.
-##Approaches to Testing
+## Approaches to Testing
 
 Everyone does testing a little differently. Some teams still rely heavily on a Quality Assurance (QA) department with people manually executing checklists like we described in the example above. Some people use an approach called Test Driven Development (TDD) in which they write the (failing) test first and only then do they actually write the code necessary to make it pass, and thus very deliberately build the application out with 100% test coverage. Others prefer to keep their test suites fairly light and will only write tests for the major interactions on their pages and any bugs that they have to fix along the way (to make sure they don't come back).
 
 Regardless of how exactly it's done, testing is highly important and you'll be required to do it whatever your job is. Beginning developers are often tasked to write tests and fix bugs to become familiar with a given code base. Luckily, we'll cover testing more in the Ruby and Rails and Javascript courses later in the curriculum.
-##Points to Ponder
+## Points to Ponder
 
 Look through these now and then use them to test yourself after doing the assignment
 
@@ -27,12 +27,12 @@ Look through these now and then use them to test yourself after doing the assign
 * How do you run a RSpec test suite?
 * How do you write a basic RSpec test?
 
-##Assignment:
+## Assignment:
 
 1. Get a real-life perspective on why tests are so important by watching [this video](http://www.youtube.com/watch?v=nBtO1UOK9Hs) by Nell Shamrell. Some of the vocabulary may be stuff you haven't heard before (like "stubs" and "mocks"), but just absorb the message.
 2. Do the [Introductory RSpec level](http://rspec.codeschool.com/levels/1) from Code School to become more familiar with Ruby's RSpec test framework.
 
-##Additional Resources
+## Additional Resources
 
 This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something
 
@@ -42,7 +42,7 @@ This section contains helpful links to other content. It isn't required, so cons
 
 ---
 
-#[A Taste of Testing Ruby with RSpec](http://www.theodinproject.com/courses/ruby-programming/lessons/introduction-to-rspec)
+# [A Taste of Testing Ruby with RSpec](http://www.theodinproject.com/courses/ruby-programming/lessons/introduction-to-rspec)
 
 By now you've had some experience writing actual programs using Ruby. Presumably, you've been making sure they work by manually entering certain things in the command line over and over again. This was probably especially frustrating with some of the more complex projects you just did during the Algorithms and Data Structures lesson.
 
@@ -53,7 +53,7 @@ At the most basic level, RSpec is a "Domain Specific Language" (DSL, meaning it 
 We will cover testing in more depth in the Rails course, but you'll want to get a good base built in testing "plain old" Ruby first. It will also help you with the final project since you might otherwise find yourself endlessly entering data into the command line and using the debugger.
 
 It's difficult to find good resources to teach RSpec for free. There are some decent paid resources (listed in the "Additional Resources" section below) but the free ones are very dispersed. The way you'll likely learn it is by knowing you want to do something and then Googling around for how to test it, or going through a tutorial where someone is using it.
-##Points to Ponder
+## Points to Ponder
 
 Look through these now and then use them to test yourself after doing the assignment
 
@@ -66,14 +66,14 @@ Look through these now and then use them to test yourself after doing the assign
 * How are they different?
 * When would you use them?
 
-##Your Assignment
+## Your Assignment
 
 1. Go back to the Web Development 101 course and do the [RSpec section](http://www.theodinproject.com/web-development-101/testing-basics) if you haven't already.
 2. Get started writing your own tests by reading [this 3-part series](https://semaphoreci.com/community/series/learn-rspec) and following the tutorial in part 1.
 3. Take a glance at the [Relish RSpec official documentation](https://www.relishapp.com/rspec/rspec-core/v/2-4/docs). It will be a good resource for when you're scratching your head later.
 4. Glance through [Better Specs](http://betterspecs.org/), which shows tons of examples of what you should and shouldn't do with RSpec.
 
-##Additional Resources
+## Additional Resources
 
 This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something
 
